@@ -49,36 +49,24 @@ Adobe's Challenge 1a requires a CPU-only solution to **automatically process PDF
 
 ---
 
-Here is the **Markdown-formatted vertical project structure** that you can **directly paste** into your `README.md` file. It will render correctly on GitHub or any Markdown viewer:
-
-## 📁 Project Structure
-
-```
-
-Adobe\_1A/
-│
-├── sample\_dataset/              # Sample PDFs or test files
-│
-├── pdfs/                        # Input PDF files
-│
-├── outputs/                     # Output JSON files
-│
-├── schema/
-│   └── output\_schema.json       # JSON schema for validation
-│
-├── Dockerfile                   # Docker setup file
-│
-├── process\_pdfs.py              # Main Python script for PDF to JSON
-│
-├── requirements.txt             # List of Python dependencies
-│
-└── README.md                    # Project documentation (you're here!)
-
-```
-```
+## 🗂 Project Structure
 
 
 
+Challenge\_1a/
+├── sample\_dataset/
+│   ├── pdfs/               # Input PDFs
+│   ├── outputs/            # Output JSONs
+│   └── schema/
+│       └── output\_schema.json
+├── Dockerfile              # Docker container config
+├── process\_pdfs.py         # PDF → JSON conversion script
+├── requirements.txt        # All dependencies
+└── README.md               # This file
+
+`
+
+---
 
 ## 🚀 Setup & Commands
 
@@ -209,3 +197,12 @@ if _name_ == "_main_":
 ---
 
 **Let’s decode PDFs at scale — fast, structured, offline.**
+
+
+
+
+
+
+
+
+
