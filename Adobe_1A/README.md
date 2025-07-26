@@ -1,4 +1,4 @@
-# 🧾 PDF StructExtractor – Adobe Hackathon 2025 (Challenge 1a)
+# 🧾 PDF StructExtractor – Adobe Hackathon 2025 (Challenge 1A)
 
 > 📘 A robust, containerized solution that extracts **structured data** from PDFs and outputs valid **JSON** — optimized for speed, memory, and no-network constraints.
 
