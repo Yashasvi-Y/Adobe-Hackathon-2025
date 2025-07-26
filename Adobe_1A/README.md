@@ -196,22 +196,21 @@ if __name__ == "__main__":
 
 ---
 
-
-
-
 ---
-## 🏁 Submission
+
+## 🏁 Submission Guidelines
 
 Each collection must include:
 
 ✅ `/PDFs/` folder with the source documents  
 ✅ `challenge1a_input.json` file  
-✅ `challenge1a_output.json` with your extracted key information 
+✅ `challenge1a_output.json` file containing your extracted key information  
+
+---
+
+### ⚡ Let's Decode PDFs at Scale — Fast, Structured, Offline! 📄🚀
+
 ---
 
 
 
-
----
-
-**Let’s decode PDFs at scale — fast, structured, offline.** 🚀📄
