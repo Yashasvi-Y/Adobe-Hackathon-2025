@@ -1,45 +1,39 @@
-# 🧠 Challenge 1b: Multi-Collection PDF Analysis
+# 🔍 Challenge 1B: Multi-Collection PDF Analysis
 
-## 🚀 Overview
-
-This project presents a powerful **PDF analysis solution** capable of handling multiple document collections. It extracts relevant and ranked information tailored to user **personas** and **job-to-be-done** use cases. The output is a structured JSON providing both metadata and deep content insights from the PDFs.
+## 🧠 Overview
+This project presents an advanced PDF analysis pipeline capable of processing **multiple document collections** and extracting **persona-based relevant sections** based on predefined tasks or use cases. Each collection is driven by a specific persona and challenge ID, enabling accurate and contextual insights through structured JSON outputs.
 
 ---
 
-## 🧾 Project Structure
+## 📁 Project Structure
 
 ```
 
 Challenge\_1b/
-├── Collection 1/
-│   ├── PDFs/                     # Travel Planning PDFs
-│   ├── challenge1b\_input.json   # Input config for Collection 1
-│   └── challenge1b\_output.json  # Output results
-├── Collection 2/
-│   ├── PDFs/                     # Adobe Acrobat Learning PDFs
-│   ├── challenge1b\_input.json   # Input config for Collection 2
-│   └── challenge1b\_output.json  # Output results
-├── Collection 3/
-│   ├── PDFs/                     # Recipe Collection PDFs
-│   ├── challenge1b\_input.json   # Input config for Collection 3
-│   └── challenge1b\_output.json  # Output results
+├── Collection 1/                   # Travel Planning
+│   ├── PDFs/                      # South of France travel guides
+│   ├── challenge1b\_input.json     # Input configuration for analysis
+│   └── challenge1b\_output.json    # Extracted results
+├── Collection 2/                   # Adobe Acrobat Learning
+│   ├── PDFs/                      # Acrobat tutorials and manuals
+│   ├── challenge1b\_input.json     # Input configuration for analysis
+│   └── challenge1b\_output.json    # Extracted results
 └── README.md
 
 ````
 
 ---
 
-## 📚 Collections Breakdown
+## 📚 Collections Overview
 
-| Collection | Challenge ID    | Persona           | Task Description                                                                 | Documents         |
-|------------|------------------|-------------------|----------------------------------------------------------------------------------|--------------------|
-| Collection 1 | `round_1b_002` | Travel Planner     | Plan a 4-day trip to the South of France for 10 college friends                 | 7 travel guides    |
-| Collection 2 | `round_1b_003` | HR Professional    | Create and manage fillable forms for onboarding and compliance                  | 15 Acrobat guides  |
-| Collection 3 | `round_1b_001` | Food Contractor    | Design a vegetarian buffet-style dinner menu for a corporate gathering          | 9 cooking guides   |
+| Collection       | Challenge ID     | Persona          | Task Description                                                                                   | No. of PDFs |
+|------------------|------------------|------------------|-----------------------------------------------------------------------------------------------------|-------------|
+| Travel Planning  | round_1b_002     | Travel Planner   | Plan a 4-day trip for 10 college friends to the South of France                                     | 7           |
+| Acrobat Learning | round_1b_003     | HR Professional  | Create and manage fillable forms for employee onboarding and compliance                             | 15          |
 
 ---
 
-## 🧩 Input Format (`challenge1b_input.json`)
+## 📥 Input JSON Format
 
 ```json
 {
@@ -48,35 +42,32 @@ Challenge\_1b/
     "test_case_name": "specific_test_case"
   },
   "documents": [
-    {
-      "filename": "sample.pdf",
-      "title": "Document Title"
-    }
+    {"filename": "doc1.pdf", "title": "PDF Title"}
   ],
   "persona": {
     "role": "User Persona"
   },
   "job_to_be_done": {
-    "task": "Use case description"
+    "task": "Use case or task description"
   }
 }
 ````
 
 ---
 
-## 📤 Output Format (`challenge1b_output.json`)
+## 📤 Output JSON Format
 
 ```json
 {
   "metadata": {
     "input_documents": ["doc1.pdf", "doc2.pdf"],
-    "persona": "Travel Planner",
-    "job_to_be_done": "Plan 4-day trip"
+    "persona": "User Persona",
+    "job_to_be_done": "Task description"
   },
   "extracted_sections": [
     {
       "document": "doc1.pdf",
-      "section_title": "Day 1 Itinerary",
+      "section_title": "Relevant Section Title",
       "importance_rank": 1,
       "page_number": 3
     }
@@ -84,7 +75,7 @@ Challenge\_1b/
   "subsection_analysis": [
     {
       "document": "doc1.pdf",
-      "refined_text": "Suggested travel route and accommodation options",
+      "refined_text": "Summarized or relevant content text here...",
       "page_number": 3
     }
   ]
@@ -95,33 +86,26 @@ Challenge\_1b/
 
 ## ✨ Key Features
 
-* ✅ **Multi-collection PDF ingestion**
-* 🧠 **Persona-based context filtering**
-* 🔍 **Importance-based section ranking**
-* 🧾 **Refined content summaries per section**
-* 💾 **Clean and structured JSON output**
+* 🎯 **Persona-based content extraction** tailored to different professional roles and needs
+* 📊 **Importance ranking** of sections to highlight most relevant insights
+* 📂 **Multi-collection support** with scalable configuration
+* 📄 **Structured JSON output** for downstream integration and automation
+* 🧩 Easily extendable to other use cases, documents, and domains
 
 ---
 
-## 📌 Sample Use Case
+## 📌 Notes
 
-> **Persona:** Travel Planner
-> **Job To Be Done:** Plan a detailed trip itinerary
-> **Expected Output:** Ranked list of day-wise trip activities, maps, transportation tips, and hotel recommendations extracted from relevant travel guides.
+* Ensure each collection follows the expected input/output format before running the pipeline.
+* Designed with modularity and clarity to support evaluation across multiple challenges in the hackathon.
 
----
-
-## 💻 Run Instructions
-
-No code execution is required for this challenge – your role is to create the correct `input.json`, analyze the PDFs manually or programmatically, and fill the `output.json` in the given format.
+```
 
 ---
 
-## 📎 Notes
+Let me know if you want this in plain `.txt` or downloadable file form.
+```
 
-* Output must match the **structure exactly** as per challenge requirement.
-* You may automate analysis or fill outputs manually using PDF readers.
-* Always rank sections by **relevance to persona's task**, not by appearance.
 
 ---
 
