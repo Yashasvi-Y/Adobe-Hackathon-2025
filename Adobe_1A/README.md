@@ -49,20 +49,21 @@ Adobe's Challenge 1a requires a CPU-only solution to **automatically process PDF
 
 ---
 
-## 🗂 Project Structure
-
-
+## 🗂️ Project Structure
 
 Adobe_1A/
+│
 ├── sample_dataset/
-│ ├── pdfs/ # Input PDFs
-│ ├── outputs/ # Output JSON files
-│ └── schema/
-│ └── output_schema.json
-├── Dockerfile # Docker container configuration
-├── process_pdfs.py # Main PDF to JSON converter script
-├── requirements.txt # Python dependencies
-└── README.md # You're here
+│   ├── pdfs/                   # Input PDF files
+│   ├── outputs/                # Output JSON files
+│   └── schema/
+│       └── output_schema.json  # JSON schema for validation
+│
+├── Dockerfile                  # Docker setup file
+├── process_pdfs.py             # Main Python script for PDF to JSON
+├── requirements.txt            # List of Python dependencies
+└── README.md                   # Project documentation (you're here!)
+
 
 `
 
