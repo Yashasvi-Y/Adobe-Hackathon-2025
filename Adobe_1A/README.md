@@ -51,20 +51,20 @@ Adobe's Challenge 1a requires a CPU-only solution to **automatically process PDF
 
 ## 🗂 Project Structure
 
+```
 
-
-Challenge\_1a/
+Adobe\_1A/
 ├── sample\_dataset/
 │   ├── pdfs/               # Input PDFs
 │   ├── outputs/            # Output JSONs
 │   └── schema/
-│       └── output\_schema.json
+│       └── output\_schema.json  # JSON schema for validation
 ├── Dockerfile              # Docker container config
 ├── process\_pdfs.py         # PDF → JSON conversion script
-├── requirements.txt        # All dependencies
-└── README.md               # This file
+├── requirements.txt        # All Python dependencies
+└── README.md               # Project documentation (you're here!)
 
-`
+````
 
 ---
 
@@ -81,37 +81,37 @@ Ensure you have:
 
 ### 2️⃣ Install Python Dependencies (Local Testing Only)
 
-bash
+```bash
 pip install -r requirements.txt
-`
+````
 
 Contents of `requirements.txt`:
 
-txt
+```txt
 PyMuPDF==1.22.5
 pdfminer.six==20221105
 jsonschema==4.21.1
-
+```
 
 ---
 
 ### 3️⃣ Docker Build Command
 
-bash
+```bash
 docker build --platform linux/amd64 -t pdf-structextractor .
-
+```
 
 ---
 
 ### 4️⃣ Docker Run Command
 
-bash
+```bash
 docker run --rm \
   -v $(pwd)/sample_dataset/pdfs:/app/input:ro \
   -v $(pwd)/sample_dataset/outputs:/app/output \
   --network none \
   pdf-structextractor
-
+```
 
 ---
 
@@ -141,7 +141,7 @@ docker run --rm \
 
 ## 📜 Sample Code Snippet (Inside `process_pdfs.py`)
 
-python
+```python
 from pathlib import Path
 import json
 import fitz  # PyMuPDF
@@ -175,9 +175,9 @@ def process_pdfs():
         with open(output_path, "w") as f:
             json.dump(json_data, f, indent=4)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     process_pdfs()
-
+```
 
 ---
 
@@ -196,13 +196,10 @@ if _name_ == "_main_":
 
 ---
 
-**Let’s decode PDFs at scale — fast, structured, offline.**
+**Let’s decode PDFs at scale — fast, structured, offline.** 🚀📄
+
+```
 
 
-
-
-
-
-
-
-
+I'm here to help!
+```
