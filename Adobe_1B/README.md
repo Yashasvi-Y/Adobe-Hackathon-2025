@@ -1,7 +1,7 @@
-# 🔍 Challenge 1B: Multi-Collection PDF Analysis
+# Challenge 1B: Multi-Collection PDF Analysis
 
-## 🧠 Overview
-This project presents an advanced PDF analysis pipeline capable of processing **multiple document collections** and extracting **persona-based relevant sections** based on predefined tasks or use cases. Each collection is driven by a specific persona and challenge ID, enabling accurate and contextual insights through structured JSON outputs.
+## 🧠 Overview  
+This project presents an advanced PDF analysis pipeline capable of processing multiple document collections and extracting persona-based relevant sections based on predefined tasks or use cases. Each collection is driven by a specific persona and challenge ID, enabling accurate and contextual insights through structured JSON outputs.
 
 ---
 
@@ -26,10 +26,10 @@ Challenge\_1b/
 
 ## 📚 Collections Overview
 
-| Collection       | Challenge ID     | Persona          | Task Description                                                                                   | No. of PDFs |
-|------------------|------------------|------------------|-----------------------------------------------------------------------------------------------------|-------------|
-| Travel Planning  | round_1b_002     | Travel Planner   | Plan a 4-day trip for 10 college friends to the South of France                                     | 7           |
-| Acrobat Learning | round_1b_003     | HR Professional  | Create and manage fillable forms for employee onboarding and compliance                             | 15          |
+| Collection         | Challenge ID   | Persona           | Task Description                                                                   | No. of PDFs |
+|--------------------|----------------|-------------------|-------------------------------------------------------------------------------------|-------------|
+| Travel Planning     | round_1b_002   | Travel Planner     | Plan a 4-day trip for 10 college friends to the South of France                    | 7           |
+| Acrobat Learning    | round_1b_003   | HR Professional    | Create and manage fillable forms for employee onboarding and compliance            | 15          |
 
 ---
 
@@ -86,26 +86,37 @@ Challenge\_1b/
 
 ## ✨ Key Features
 
-* 🎯 **Persona-based content extraction** tailored to different professional roles and needs
-* 📊 **Importance ranking** of sections to highlight most relevant insights
-* 📂 **Multi-collection support** with scalable configuration
-* 📄 **Structured JSON output** for downstream integration and automation
-* 🧩 Easily extendable to other use cases, documents, and domains
+| Feature                       | Description                                                              |
+| ----------------------------- | ------------------------------------------------------------------------ |
+| 🎯 Persona-based Extraction   | Tailors information to the intent and profession of the user persona     |
+| 📊 Section Importance Ranking | Ranks sections in order of relevance to the task                         |
+| 📂 Multi-Collection Support   | Handles different domains/personas via modular collection folders        |
+| 🧩 Modular and Extensible     | Easily add new challenges, personas, or domains                          |
+| 📄 Structured JSON Output     | Output-ready format for downstream AI workflows and automation pipelines |
+| 🔄 Offline and Configurable   | No external APIs; all logic handled locally for privacy and speed        |
 
 ---
 
-## 📌 Notes
+## 🧪 Technologies Used
 
-* Ensure each collection follows the expected input/output format before running the pipeline.
-* Designed with modularity and clarity to support evaluation across multiple challenges in the hackathon.
-
-```
+| Component          | Technology                          |
+| ------------------ | ----------------------------------- |
+| Language           | Python                              |
+| PDF Parsing        | PyMuPDF / pdfminer.six / fitz       |
+| JSON Configuration | Built-in `json` library             |
+| Ranking Algorithm  | Custom heuristic / semantic scoring |
+| Environment        | Offline / Local execution only      |
 
 ---
 
-Let me know if you want this in plain `.txt` or downloadable file form.
-```
+## 🚫 System Constraints
 
+| Constraint                      | Details                                                                  |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| 🔌 Offline Only                 | No external API calls or cloud dependencies                              |
+| 📎 File Format Requirement      | Only `.pdf` files supported                                              |
+| 📦 Folder Structure Enforcement | Must maintain folder and naming convention for each challenge/collection |
+| 🧠 Semantic Inference Scope     | Limited to structural + keyword extraction; no generative AI inference   |
 
 ---
 
@@ -113,7 +124,7 @@ Let me know if you want this in plain `.txt` or downloadable file form.
 
 Focus on:
 
-* 🔎 Precision in extraction
+* 🔍 Precision in extraction
 * 🤖 Understanding the persona’s intent
 * 📊 Structuring your results meaningfully
 
@@ -123,9 +134,13 @@ Focus on:
 
 Each collection must include:
 
-* ✅ `/PDFs/` folder with source documents
-* ✅ `challenge1b_input.json` file
-* ✅ `challenge1b_output.json` with your extracted analysis
+✅ `/PDFs/` folder with the source documents
+✅ `challenge1b_input.json` file
+✅ `challenge1b_output.json` file containing your extracted analysis
 
 ---
+
+**Let’s scale smart document reading, one persona at a time!** 🧠📄🚀
+
+```
 
