@@ -1,19 +1,52 @@
 # Challenge 1B: Multi-Collection PDF Analysis
 
-🧠 **Overview**  
-This project presents an advanced PDF analysis pipeline capable of processing multiple document collections and extracting persona-based relevant sections based on predefined tasks or use cases. Each collection is driven by a specific persona and challenge ID, enabling accurate and contextual insights through structured JSON outputs.
+## 🧠 Overview
+
+This project presents an advanced PDF analysis pipeline capable of processing multiple document collections and extracting **persona-based relevant sections** based on predefined tasks or use cases.  
+Each collection is driven by a specific **persona** and **challenge ID**, enabling accurate and contextual insights through structured **JSON outputs**.
+
+It is built to:
+- Work **offline**, without using external APIs  
+- Handle **multilingual PDFs**  
+- Extract, rank, and summarize relevant document sections based on the **persona’s intent and tasks**
 
 ---
 
-### ✨ Key Features | 🛠 Technologies Used | 🚫 System Constraints
+## ✨ Key Features
 
-| ✨ Key Features                                                                 | 🛠 Technologies Used                       | 🚫 System Constraints                                                                 |
-|--------------------------------------------------------------------------------|-------------------------------------------|----------------------------------------------------------------------------------------|
-| 📂 Multi-collection persona-based PDF analysis                                 | Python (PyMuPDF, pdfplumber, fitz)        | ❌ No cloud API or online model use allowed                                            |
-| 🔍 Contextual section identification using task descriptions                   | Regex, spaCy, NLTK                        | ❌ Output must be generated fully offline                                              |
-| 📊 Importance ranking of extracted content                                     | Custom ranking heuristics                 | ❌ Fixed folder structure for each collection (`PDFs/`, `input.json`, `output.json`)   |
-| 🧠 Role-specific extraction logic via persona-task matching                     | JSON Schema, Rule-based filtering          | ❌ Uniform output JSON structure as per problem description                            |
-| 🧩 Extensible architecture for scaling across more collections and personas     | Modular Python scripts                    | ❌ External library usage limited to lightweight, offline-compatible ones              |
+| Feature No. | Description                                                                                      |
+|-------------|--------------------------------------------------------------------------------------------------|
+| 1️⃣         | 📂 Supports multiple PDF collections with persona-based task segmentation                         |
+| 2️⃣         | 🔍 Identifies contextually relevant sections using task and role alignment                        |
+| 3️⃣         | 🧠 Extracts and ranks document sections based on relevance to the task                            |
+| 4️⃣         | 📊 Provides structured JSON outputs with metadata and sub-section analysis                        |
+| 5️⃣         | 🔁 Modular and scalable architecture adaptable to new personas, documents, and use cases          |
+
+---
+
+## 🛠 Technologies Used
+
+| Technology        | Purpose                                                               |
+|-------------------|-----------------------------------------------------------------------|
+| Python            | Core scripting and orchestration                                     |
+| PyMuPDF (fitz)    | Efficient PDF parsing and text extraction                            |
+| pdfplumber        | Accurate layout-aware PDF text extraction                            |
+| spaCy / NLTK      | Natural Language Processing for semantic analysis                    |
+| JSON Schema       | Structuring and validating input/output formats                      |
+| Regex             | Pattern-based filtering of relevant information                      |
+| OS / glob modules | File traversal and batch processing of multiple documents            |
+
+---
+
+## ⚙️ System Constraints
+
+| Constraint                        | Description                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|
+| Offline Mode                     | All processing must occur locally without external API calls                |
+| Multilingual Support             | The system must be adaptable to extract meaningful info from multilingual PDFs |
+| Structured I/O Format            | Input and Output must follow the provided JSON structure strictly           |
+| Persona-specific Relevance      | Output relevance is tightly coupled with persona's job-to-be-done           |
+| Scalability                     | Must handle multiple collections with minimal changes in config              |
 
 ---
 
@@ -38,10 +71,10 @@ Challenge\_1b/
 
 ## 📚 Collections Overview
 
-| Collection        | Challenge ID   | Persona           | Task Description                                                             | No. of PDFs |
-|------------------|----------------|-------------------|------------------------------------------------------------------------------|-------------|
-| Travel Planning   | round_1b_002   | Travel Planner    | Plan a 4-day trip for 10 college friends to the South of France              | 7           |
-| Acrobat Learning  | round_1b_003   | HR Professional   | Create and manage fillable forms for employee onboarding and compliance      | 15          |
+| Collection Name   | Challenge ID     | Persona          | Task Description                                                                     | No. of PDFs |
+|-------------------|------------------|------------------|----------------------------------------------------------------------------------------|-------------|
+| Travel Planning    | round_1b_002     | Travel Planner    | Plan a 4-day trip for 10 college friends to the South of France                        | 7           |
+| Acrobat Learning   | round_1b_003     | HR Professional   | Create and manage fillable forms for employee onboarding and compliance                | 15          |
 
 ---
 
@@ -113,18 +146,16 @@ Focus on:
 
 ---
 
-## 🏁 Submission
+## 🏁 Submission Checklist
 
 Each collection must include:
 
-✅ `/PDFs/` folder with the source documents
+✅ `/PDFs/` folder with source documents
 ✅ `challenge1b_input.json` file
 ✅ `challenge1b_output.json` with your extracted analysis
 
 ---
 
-**Let’s decode PDFs at scale — fast, structured, offline.** 🚀📄
-
-```
+🔚 *End-to-end automated and explainable persona-driven document analysis ready for diverse real-world tasks.*
 
 
