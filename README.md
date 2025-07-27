@@ -132,6 +132,3 @@ This project is developed as part of the **Adobe India Hackathon 2025 – Connec
 ---
 
 ```
-
----
-```
