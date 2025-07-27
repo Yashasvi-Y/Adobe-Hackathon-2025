@@ -89,7 +89,7 @@ docker run -v $(pwd)/pdfs:/app/pdfs adobe_1b
 | ----------------- | ----------------------------------- |
 | Language          | Python                              |
 | PDF Parsing       | PyMuPDF, pdfminer.six               |
-| Data Handling     | pandas, json                        |
+| Data Handling     | json                                |
 | Containerization  | Docker                              |
 | NLP Layer         | Custom heuristics + keyword mapping |
 | Round 2 (Planned) | Adobe PDF Embed API, Web Frontend   |
