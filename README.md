@@ -109,8 +109,9 @@ In the next phase, we'll create a smart webapp using Adobe PDF Embed API that al
 
 ## 👥 Team
 
-* **Lekhni Bakliwal** – AI & Document Intelligence
+
 * **Yashasvi Yadav** – Multi-PDF Linking & Backend Structuring
+*  **Lekhni Bakliwal** – AI & Document Intelligence
 
 ---
 
