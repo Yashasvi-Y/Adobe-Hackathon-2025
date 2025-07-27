@@ -134,12 +134,4 @@ This project is developed as part of the **Adobe India Hackathon 2025 – Connec
 ```
 
 ---
-
-### ✅ Next Steps:
-
-1. Go to your repo → click **"Add a README"**.
-2. Paste this markdown content into the editor.
-3. Click **"Commit new file"** to publish.
-
-Let me know if you'd like a matching **project banner**, **GIF demo**, or **demo video script** for Round 2!
 ```
