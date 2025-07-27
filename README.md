@@ -110,8 +110,8 @@ In the next phase, we'll create a smart webapp using Adobe PDF Embed API that al
 ## 👥 Team
 
 
-* **Yashasvi Yadav** – Multi-PDF Linking & Backend Structuring
-*  **Lekhni Bakliwal** – AI & Document Intelligence
+* **Yashasvi Yadav** – AI & Document Intelligence and Multi-PDF Linking & Backend Structuring
+*  **Lekhni Bakliwal** – Research and Documentation
 
 ---
 
@@ -125,8 +125,3 @@ In the next phase, we'll create a smart webapp using Adobe PDF Embed API that al
 
 ---
 
-## 📄 License
-
-This project is developed as part of the **Adobe India Hackathon 2025 – Connecting the Dots** challenge. All rights reserved to the team members.
-
----
