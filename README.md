@@ -130,5 +130,3 @@ In the next phase, we'll create a smart webapp using Adobe PDF Embed API that al
 This project is developed as part of the **Adobe India Hackathon 2025 – Connecting the Dots** challenge. All rights reserved to the team members.
 
 ---
-
-```
